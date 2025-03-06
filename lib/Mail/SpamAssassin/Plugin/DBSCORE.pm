@@ -37,6 +37,11 @@ sub new {
  return $self;
 }
 
+=method DBSCORE()
+
+Add spam points from db.
+=cut
+
 sub DBSCORE{
   my ($self, $pms, $fulltext) = @_;
 
